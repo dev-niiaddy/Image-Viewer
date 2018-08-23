@@ -1,0 +1,15 @@
+.side-menu {
+    -fx-background-color: #263238;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.display-pane {
+    -fx-background-color: #212121;
+}
+
+.back-btn {
+    -fx-background-color: #212121;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="828.0" prefWidth="1157.0" stylesheets="@../themes/theme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <VBox prefHeight="676.0" prefWidth="88.0" spacing="10.0" styleClass="side-menu">
+         <children>
+            <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" prefHeight="44.0" prefWidth="91.0" styleClass="back-btn" text="Back">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="ARROW_LEFT" size="1.5em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="10.0" onAction="#onImageAction" prefHeight="69.0" prefWidth="88.0" text="Images">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="IMAGE" size="2em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="64.0" onAction="#onCameraAction" prefHeight="69.0" prefWidth="88.0" text="Take a photo">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="CAMERA" size="2em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="10.0" layoutY="143.0" onAction="#onSettingsAction" prefHeight="69.0" prefWidth="88.0" text="Settings">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="COG" size="2em" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <StackPane fx:id="rootPane" prefHeight="150.0" prefWidth="200.0" styleClass="display-pane" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>
